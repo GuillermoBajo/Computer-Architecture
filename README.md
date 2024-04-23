@@ -1,7 +1,3 @@
-# Práctica 5: Entrada/Salida
-
-Este proyecto está diseñado para poner en práctica la gestión de periféricos en bajo nivel, así como para consolidar conceptos relacionados con la entrada y salida de datos y las interrupciones en sistemas de microcontroladores. La práctica incluye el desarrollo de un juego que involucra el control de un coche en una carretera generada aleatoriamente.
-
 ## Computer Architecture
 
 El proyecto se centra en el control de un coche que se desplaza por una carretera en una pantalla de texto. Los límites de la carretera están definidos por caracteres `#` (ASCII 35) y el coche por el carácter `H` (ASCII 72). Las funcionalidades clave incluyen:
