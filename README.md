@@ -1,22 +1,20 @@
 ## Computer Architecture
 
-El proyecto se centra en el control de un coche que se desplaza por una carretera en una pantalla de texto. Los límites de la carretera están definidos por caracteres `#` (ASCII 35) y el coche por el carácter `H` (ASCII 72). Las funcionalidades clave incluyen:
+The project focuses on controlling a car that moves along a road on a text-based screen. The road boundaries are defined by the `#` character (ASCII 35), and the car is represented by the `H` character (ASCII 72). Key functionalities include:
 
-- **Gestión de Periféricos**: Se controla el teclado y el temporizador para manejar las entradas del usuario y las interrupciones del temporizador.
-- **Interrupciones**: El proyecto utiliza interrupciones para gestionar el teclado (`IRQ7 del VIC`) y el temporizador (`IRQ4 del VIC`), permitiendo una sincronización precisa de los eventos.
-- **Control de Movimiento**: El usuario puede mover el coche con las teclas `J` (izquierda), `L` (derecha), `I` (arriba) y `K` (abajo). También se pueden ajustar las velocidades con las teclas `+` (aumenta velocidad) y `-` (disminuye velocidad).
+- **Peripheral Management**: The keyboard and timer are controlled to handle user inputs and timer interrupts.
+- **Interrupts**: The project uses interrupts to manage the keyboard (`IRQ7 of VIC`) and the timer (`IRQ4 of VIC`), enabling precise event synchronization.
+- **Movement Control**: The user can move the car using the keys `J` (left), `L` (right), `I` (up), and `K` (down). Speed can also be adjusted with the `+` (increase speed) and `-` (decrease speed) keys.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **Ensamblador ARM**: El código está escrito en ensamblador ARM, lo que permite un control detallado de los recursos del microcontrolador.
-- **Simulador Keil**: Se utiliza el simulador Keil para la compilación y ejecución del proyecto, proporcionando un entorno de desarrollo completo para depuración y pruebas.
-- **Subrutinas de Generación Aleatoria**: Se incluyen subrutinas en el archivo `rand.s` para generar números pseudo-aleatorios necesarios para la aleatoriedad del juego.
-- **Microcontrolador NXP LPC 2105**: El proyecto está configurado para este microcontrolador, y utiliza su sistema de entrada/salida para el control de periféricos y el manejo de interrupciones.
+- **ARM Assembly**: The code is written in ARM assembly, providing detailed control over the microcontroller’s resources.
+- **Keil Simulator**: The Keil simulator is used for compiling and running the project, providing a complete development environment for debugging and testing.
+- **Random Number Generation Subroutines**: Subroutines in the `rand.s` file are included to generate pseudo-random numbers necessary for the game's randomness.
+- **NXP LPC 2105 Microcontroller**: The project is configured for this microcontroller, utilizing its input/output system for peripheral control and interrupt handling.
 
-## Ejecución
+## Execution
 
-1. Compila el proyecto en Keil.
-2. Ejecuta el programa y controla el coche usando las teclas especificadas.
-3. Observa el movimiento del juego usando la opción `View > Periodic Window Update` en la sesión de depuración.
-
-
+1. Compile the project in Keil.
+2. Run the program and control the car using the specified keys.
+3. Observe the game's movement using the `View > Periodic Window Update` option in the debugging session.
